@@ -1,0 +1,46 @@
+.menu {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    background-image: url(../img/bg-menu.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: auto;
+
+    ul {
+        flex: 0 1 auto;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0;
+        padding-left: 7rem;
+        list-style: none;
+        font-size: 2.5rem;
+        line-height: 1;
+        font-weight: 900;
+        text-transform: uppercase;
+        // font-family: 'Panton';
+        li {
+            margin: 2rem 0 0 0;
+            &:first-child() {
+                margin: 0;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                transition: all .5s ease;
+                &:hover, &:active, &:focus {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
