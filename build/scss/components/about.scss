@@ -1,1 +1,201 @@
-//img/img-about-note.png
+.about {
+    padding: 1px 0 0 0;
+}
+.about__note {
+    display: inline-block;
+    vertical-align: top;
+    margin: -8rem 0 0 0;
+    // width: 55%;
+    padding: 3rem 4rem 3rem 27rem;
+    font-size: 2.2rem;
+    background-color: #fff;
+    background-image: url(../img/img-about-note.png);
+    background-size: 24rem auto;
+    background-position: -5% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 4rem 11rem transparentize($accent-color, .85)
+}
+.about__advantages {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about__advantages-item {
+    flex: 0 0 auto;
+    width: calc(33.33% - 10rem);
+    margin: 9rem 5rem 0 5rem;
+    &:nth-child(1) {
+        .about__advantages-title {
+            color: #0ca8d1;
+        }
+    }
+    &:nth-child(2) {
+        .about__advantages-title {
+            color: #157baf;
+        }
+    }
+    &:nth-child(3) {
+        .about__advantages-title {
+            color: #204587;
+        }
+    }
+
+    display: flex;
+}
+.about__advantages-title {
+    flex: 0 1 auto;
+    display: inline-block;
+    vertical-align: top;
+    background: none;
+    font-size: 8rem;
+    line-height: .9;
+    font-family: 'PF Din Text Comp Pro';
+}
+.about__advantages-text {
+    align-self: center;
+    flex: 0 1 auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 3rem;
+    font-size: 2.2rem;
+}
+.about__box {
+    margin: 9rem 0 0 0;
+
+    display: flex;
+}
+.about__img {
+    flex: 0 0 auto;
+    align-self: center;
+    margin: 0 0 0 -7.5%;
+    width: 55%;
+    border-right: 2px solid #f2f2f2;
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.about__content {
+    flex: 0 0 auto;
+    width: 50%;
+    margin: 0 0 0 2.5%;
+}
+.about__text {
+    margin: 4rem 0 0 0;
+    p {
+        margin: 4rem 0 0 0;
+    }
+    strong {
+        font-size: 4rem;
+        font-weight: 900;
+        color: $accent-color;
+    }
+}
+.about__link {
+    margin: 7rem 0 0 0;
+    a {
+        text-decoration: none;
+        color: $orange;
+
+
+        display: inline-flex;
+        align-items: center;
+        &:before {
+            content: '';
+            display: block;
+            flex: 0 0 auto;
+            align-self: flex-start;
+            width: 8.5rem;
+            height: 8.5rem;
+            margin: 0 4rem 0 0;
+            border-radius: 50%;
+            background-color: currentColor;
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAApCAYAAABZa1t7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODc5QUE0MUY2QTQ4MTFFOEI4QzI4MDJBRkRCODc2RDQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODc5QUE0MjA2QTQ4MTFFOEI4QzI4MDJBRkRCODc2RDQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NzlBQTQxRDZBNDgxMUU4QjhDMjgwMkFGREI4NzZENCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NzlBQTQxRTZBNDgxMUU4QjhDMjgwMkFGREI4NzZENCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkdgmxAAAAGTSURBVHja7Jg/S8NAGIfT+mcoShzbIu3sLkJB6CD4AQq6uEpB/D6Ca0FwFTpJLWgmpVAlg3NxcHDRQju1nr+DXzAJNk1yR+JwLzzwhty975NLm1xbEEJYGmIH3DE/AK+qBYuWnmiBCmnpKKhLbG1BnruY9jBiRsyIGTEjZsSMmBEzYoEogR54A0cp+hxzbo+1lsZqzMK73MvLuAbr4Crm3BPQ4SJss9aDrhUbANc3p8OGSaQs1hjovJVTrthLSK4dMacdknpmjanOWynjAzTBLdhjw0uw8sfYM3DhO34Ch+Ardjf5uzIhNngUweguyAXH2kn7pBHz5ByxPJw0UipikhLoR0j1OcbKWixKTknKE6uDU1BWkHN9Uq6CVJkudXkwYsGhwhVu8EPfZZ62zpAuo4L4/btHfpW3cn5FfgLb7C6MWNZixf/kI5MJ801Qy1GqRgcZEynm+E7KbUo1B6kqe3vhyOfYPpJ73zJ+g3cwy0hKbr0qof5N74l7DuYi/5jTJfASb4AbMM5BaMzeDc/nR4ABAKmjLxGba1AGAAAAAElFTkSuQmCC');
+            background-position: 50% 50%;
+            background-size: 50% 50%;
+            background-repeat: no-repeat;
+            transition: all .5s ease;
+        }
+        &:hover, &:active {
+    		&:before {
+                background-color: lighten($orange, 10%);
+        		box-shadow: 0 1rem 3rem 0 transparentize($orange, 0.5);
+            }
+    	}
+    }
+}
+
+@media only screen and (max-width : 1440px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .about__advantages-item {
+        width: calc(33.33% - 5rem);
+        margin: 9rem 2.5rem 0 2.5rem;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .about__advantages-item {
+        flex-direction: column;
+        align-items: center;
+        // width: calc(50% - 5rem);
+        // margin: 9rem 2.5rem 0 2.5rem;
+        text-align: center;
+    }
+    .about__advantages-text {
+        margin: 3rem 0 0 0;
+    }
+    .about__box {
+        display: block;
+    }
+    .about__img {
+        margin: 7rem -15px 0 0;
+        width: auto;
+    }
+    .about__content {
+        width: auto;
+        margin: 7rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+    .about__advantages-item {
+        width: calc(50% - 5rem);
+        margin: 9rem 2.5rem 0 2.5rem;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .about__note {
+        padding: 3rem 4rem 3rem 22rem;
+        background-size: 20rem auto;
+    //background-position: -5% 50%;
+    }
+    .about__advantages {
+        display: block;
+    }
+    .about__advantages-item {
+        width: auto;
+        margin: 9rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .about__note {
+        padding: 27rem 4rem 3rem 4rem;
+        // background-size: 24rem auto;
+        background-position: 50% 3rem;
+        text-align: center;
+    }
+}

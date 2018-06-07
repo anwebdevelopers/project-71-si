@@ -1,0 +1,92 @@
+.terms {
+    padding: 9rem 0 0 0;
+    background-image: linear-gradient(#fafafa, #fafafa);
+    background-position: 0 100%;
+    background-size: 100% 27.5rem;
+    background-repeat: no-repeat;
+}
+.terms__box {
+    background-color: #fff;
+
+    display: flex;
+}
+.terms__content {
+    flex: 0 0 auto;
+    width: 45%;
+    padding: 7rem 5%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-color: #0a0b42;
+    color: #fff;
+}
+.terms__title {
+    margin: 0;
+	font-size: 6.5rem;
+	line-height: 1.4;
+	font-weight: 400;
+	text-transform: uppercase;
+    font-family: 'PF Din Text Comp Pro';
+}
+.terms__text {
+    margin: 8rem 0 0 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.terms__form {
+    flex: 0 0 auto;
+    width: 40%;
+    padding: 4rem 5%;
+}
+.form__submit {
+    margin: 3rem 0 0 0;
+}
+
+@media only screen and (max-width : 1440px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+    .terms__content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 992px) {
+    .terms__content {
+        width: 55%;
+    }
+    .terms__title {
+        font-size: 6rem;
+    }
+    .terms__form {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+    .terms__title {
+        font-size: 5.5rem;
+    }
+
+}
+
+@media only screen and (max-width : 640px) {
+    .terms__box {
+        display: block;
+    }
+    .terms__content {
+        width: auto;
+    }
+    .terms__form {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}
