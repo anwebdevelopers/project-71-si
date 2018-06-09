@@ -99,8 +99,7 @@ a {
 }
 
 .title {
-	margin: 0;
-	padding: 0 0 0 5%;
+	margin: 0 0 0 5%;
 	font-size: 8.5rem;
 	line-height: .9;
 	font-weight: 400;
@@ -252,7 +251,9 @@ a {
 @import "components/terms.scss";
 @import "components/topics.scss";
 @import "components/exhibition.scss";
-
+@import "components/participants.scss";
+@import "components/why.scss";
+@import "components/speakers.scss";
 
 //@import "build/scss/components/magnific-popup.scss";
 
@@ -261,7 +262,7 @@ a {
 
 //Load Libs SASS
 //@import "html/libs/animate/animate.sass";
-//@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min";
+@import "html/libs/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.scss";
 //@import "html/libs/superfish/dist/css/superfish";
 //@import "html/libs/font-awesome/scss/font-awesome.scss";
 //@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";

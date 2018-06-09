@@ -1,0 +1,60 @@
+.speakers {
+    padding: 10rem 0;
+}
+.speakers__box {
+    margin: 9rem 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.speakers__item {
+    margin: 9rem 4rem 0 4rem;
+    width: calc(33.3333% - 8rem);
+}
+.speakers__item-img {
+    margin: 0;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.speakers__item-title {
+    margin: 4rem 0 0 0;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+.speakers__item-text {
+    margin: 2rem 0 0 0;
+    color: #4d5178;
+}
+@media only screen and (max-width : 1440px) {
+
+}
+
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+    .speakers__box {
+        margin: 9rem 0 0 0;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 360px) {
+
+}
