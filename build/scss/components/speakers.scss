@@ -9,9 +9,15 @@
 .speakers__item {
     margin: 9rem 4rem 0 4rem;
     width: calc(33.3333% - 8rem);
+
+}
+.speakers__item-link {
+    text-decoration: none;
+    color: inherit;
 }
 .speakers__item-img {
     margin: 0;
+    background-color: #e9eef4;
     img {
         display: inline-block;
         vertical-align: top;
@@ -29,6 +35,56 @@
     margin: 2rem 0 0 0;
     color: #4d5178;
 }
+.speakers__button {
+    margin: 14rem 0 0 0;
+    text-align: center;
+}
+.speakers__item-box {
+    display: none;
+}
+.speakers__popup {
+    background-color: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(../img/bg-speakers.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    display: flex;
+}
+.speakers__popup-img {
+    align-self: flex-end;
+    flex: 0 0 auto;
+    margin: 0;
+    width: 32%;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+}
+.speakers__popup-content {
+    align-self: center;
+    flex: 0 0 auto;
+    width: 68%;
+    padding: 5rem 4%;
+}
+.speakers__popup-title {
+    margin: 0;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+.speakers__popup-subtitle {
+    margin: 2rem 0 0 0;
+    color: #4d5178;
+}
+.speakers__popup-text {
+    margin: 4rem 0 0 0;
+    font-size: 2rem;
+}
 @media only screen and (max-width : 1440px) {
 
 }
@@ -38,17 +94,37 @@
 }
 
 @media only screen and (max-width : 992px) {
-
+    .speakers__item {
+        margin: 9rem 2rem 0 2rem;
+        width: calc(33.3333% - 4rem);
+    }
 }
 
 @media only screen and (max-width : 768px) {
     .speakers__box {
         margin: 9rem 0 0 0;
     }
+    .speakers__item {
+        margin: 9rem 1rem 0 1rem;
+        width: calc(33.3333% - 2rem);
+    }
+    .speakers__popup {
+        display: block;
+    }
+    .speakers__popup-img {
+        width: auto;
+        text-align: center;
+    }
+    .speakers__popup-content {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width : 640px) {
-
+    .speakers__item {
+        // margin: 9rem 2rem 0 2rem;
+        width: calc(50% - 2rem);
+    }
 }
 
 @media only screen and (max-width : 480px) {
@@ -56,5 +132,11 @@
 }
 
 @media only screen and (max-width : 360px) {
-
+    .speakers__box {
+        display: block;
+    }
+    .speakers__item {
+        // margin: 9rem 0 0 0;
+        width: auto;
+    }
 }
